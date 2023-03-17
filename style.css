@@ -60,10 +60,9 @@ h1{
     margin-top: 24px;
 
 }
-#email-input{
+.email-input{
     width: 305px;
     height: 40px;      
-    margin-top: 32px;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.4px;
@@ -73,6 +72,7 @@ h1{
     border-radius: 3.15px;
 
 }
+
 .email-dekstop{
     display: none;
 }
@@ -240,13 +240,11 @@ h4{
     margin-top: 16px;
     color: white;
 }
-#email-input2{
+.email-input2{
     width: 240px;
     height: 32px;
-    border: none;
     border-radius: 1.5px;
-    margin-left:66px;
-    margin-top: 24px;
+    border-color:white ;
     padding-left: 21px;
     color: #C0C0C0;
 }
@@ -260,9 +258,8 @@ h4{
     color: white;
     border: none;
     background-color: #2F65F8;
-    border:none;
-    margin-left: 66px;
-    margin-top: -8px;
+    
+
 }
 
 .footer{
@@ -342,25 +339,19 @@ li:hover{
 .email-div{
     display: flex;
     flex-direction: column;
+    margin-top: 32px;
     gap: 16px;
 }
 .email-div2{
     display: flex;
     flex-direction: column;
+    margin-top: -98px;
+    margin-left:-66px ;
     gap: 16px;
+    align-items: flex-end;
+
 }
-.email-div input{
-    width: 350px;
-    height: 40px;
-    padding: 14px 0 12px 21px;
-    border-radius: 3.13px;
-}
-.email-div2 input{
-    width: 350px;
-    height: 40px;
-    padding: 14px 0 12px 21px;
-    border-radius: 3.13px;
-}
+
 
 .input.container{
     display: flex;
@@ -372,13 +363,10 @@ li:hover{
     flex-direction: column;
     gap: 5px;
 }
-#error-div2{
-    margin-left: 65px;
-}
 
 .success{
     border: 1px solid green;
-}                                       /*      ?     */      
+}                                            
 .error{
     border: 1px solid #EF4877;
 }
@@ -437,14 +425,15 @@ li:hover{
         text-align: start;
         margin-left: 0px;
     }
+    .email-div{
+        display: flex;
+        flex-direction: row;
+    }
     #submit-email{
-        position: absolute;
-        margin-left: 325px;
-        margin-top: 32px;
         height: 45px;
         width: 200px;
     }
-    #email-input{
+    .email-input{
        height: 45px;
     }
     .email-dekstop{
@@ -455,10 +444,12 @@ li:hover{
     }
     #submit-email2{
         width: 200px;
-        height: 45px;   
-        position: absolute;
-        margin-top: -35px;
-        margin-left: 850px;
+        height: 45px; 
+        margin-left: -50px;         /*   ? position     */  
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
     }
 
     #submit-email2:hover{
@@ -550,20 +541,14 @@ li:hover{
         font-size: 16px;
         line-height: 24px;
     }
-    #email-input2{
+    .email-input2{
         width: 480px;
         height: 48px;
-        position: absolute;
-        margin-top: -120px;
-        margin-left: 850px;
+        
     }
-    #submit-email2{
-        margin-top: -45px;
-    }
-    #error-div2{
-        margin-left: 850px;
-        margin-top: -70px;
-    }
+
+    
+   
 
     .footer{
         width: auto;

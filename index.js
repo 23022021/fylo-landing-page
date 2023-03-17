@@ -1,10 +1,10 @@
 
-const email = document.getElementById("email-input");
+const email = document.querySelector(".email-input");
 const error = document.getElementById("error-div");
 const submitBut = document.getElementById("submit-email");
 
-const emailBottom = document.getElementById("email-input2");
-const error2 = document.getElementById("error-div2");
+const emailBottom = document.querySelector(".email-input2");
+const error2 = document.querySelector("#error-div2");
 const submitBut2 = document.getElementById("submit-email2");
 
 
@@ -65,10 +65,6 @@ submitBut2.addEventListener('click',(event)=>{
   console.log("clicked");
 })
 
-console.log(email);
-console.log(submitBut)
 
-console.log(emailBottom)
-console.log(submitBut2)
 
 
